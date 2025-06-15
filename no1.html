@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKO TU GAHt</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .btn a {
+            transition: top 0.3s ease, left 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 🔄 Updated GIF: Try Again - Jim Carrey -->
+        <div class="tenor-gif-embed" data-postid="4768546" data-share-method="host" data-aspect-ratio="1.32231" data-width="100%">
+            <a href="https://tenor.com/view/try-tryagain-aceventura-jimacarrey-gif-4768546">Try Again GIF</a>from
+            <a href="https://tenor.com/search/try-gifs">Try GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>Please think again! 🙄</h1>
+        <p>You're all I got babe'😥</p>
+
+        <div class="btn">
+            <a href="yes.html" id="move-random">Yes</a>
+            <a href="no2.html">Now don't say no again</a>
+        </div>
+    </div>
+
+    <script>
+        function moveRandomEl(elm) {
+            elm.style.position = "absolute";
+            elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
+            elm.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+        }
+
+        const moveRandom = document.querySelector("#move-random");
+        moveRandom.addEventListener("mouseenter", function (e) {
+            moveRandomEl(e.target);
+        });
+    </script>
+</body>
+
+</html>

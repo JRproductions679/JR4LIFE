@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKO TU GAH</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .btn a {
+            transition: top 0.3s ease, left 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 💖 Your chosen "I Love You" GIF -->
+        <div class="tenor-gif-embed" data-postid="2466163091627818440" data-share-method="host" data-aspect-ratio="1.04184" data-width="100%">
+            <a href="https://tenor.com/view/love-you-i-love-you-ily-that70s-show-ashton-kutcher-gif-2466163091627818440">Love You I Love You GIF</a>
+            from <a href="https://tenor.com/search/love+you-gifs">Love You GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>Do you love me? 🤗</h1>
+        <p>Me is all yours</p>
+
+        <div class="btn">
+            <a href="yes.html" id="move-random">Yes</a>
+            <a href="no1.html">ohh i hope you dont say NO.</a>
+        </div>
+    </div>
+
+    <!-- JavaScript to move the Yes button -->
+    <script>
+        function moveRandomEl(elm) {
+            elm.style.position = "absolute";
+            elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
+            elm.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+        }
+
+        const moveRandom = document.querySelector("#move-random");
+        moveRandom.addEventListener("mouseenter", function (e) {
+            moveRandomEl(e.target);
+        });
+    </script>
+</body>
+
+</html>
